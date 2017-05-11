@@ -17,14 +17,14 @@
             android:layout_weight="1"
             android:background="#ff0">
 
-            <include layout="@layout/zipai_p4_lefttop_layout" />
+            <include layout="@layout/zipai_p4_player4_layout" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1">
 
-            <include layout="@layout/zipai_p4_leftbottom_layout" />
+            <include layout="@layout/zipai_p4_player1_layout" />
         </LinearLayout>
 
     </LinearLayout>
@@ -58,11 +58,13 @@
             android:background="#888">
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/zipai_p4_opear_layout"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="5"
             android:layout_gravity="center_vertical"
-            android:background="#fff">
+            android:background="#fff"
+            android:orientation="horizontal">
         </LinearLayout>
     </LinearLayout>
 
@@ -80,7 +82,7 @@
             android:layout_gravity="center_vertical"
             android:background="#ff0">
 
-            <include layout="@layout/zipai_p4_righttop_layout" />
+            <include layout="@layout/zipai_p4_player3_layout" />
         </LinearLayout>
 
         <LinearLayout
@@ -90,7 +92,7 @@
             android:layout_gravity="center_vertical"
             android:background="#f0f">
 
-            <include layout="@layout/zipai_p4_rightbottom_layout" />
+            <include layout="@layout/zipai_p4_player2_layout" />
         </LinearLayout>
 
     </LinearLayout>
