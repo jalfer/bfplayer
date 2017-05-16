@@ -30,13 +30,18 @@ public class ZipaiP4MainActivity extends AppCompatActivity {
 
         player1JinziCardInfoList.add(new ZipaiJinziCardInfo("一一一", JinziKind.偎, true, this));
         player1JinziCardInfoList.add(new ZipaiJinziCardInfo("陸陸陸", JinziKind.碰, false, this));
-       // player1JinziCardInfoList.add(new ZipaiJinziCardInfo("十十十十", JinziKind.提, true, this));
+        player1JinziCardInfoList.add(new ZipaiJinziCardInfo("十十十十", JinziKind.提, true, this));
         player1JinziCardInfoList.add(new ZipaiJinziCardInfo("捌捌捌捌", JinziKind.跑, true, this));
         player1JinziCardInfoList.add(new ZipaiJinziCardInfo("拾贰柒", JinziKind.吃, true, this));
 
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.player1_jinzi_recyclerview);
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.zipai_player1_jinzi_recyclerview);
         GridLayoutManager layoutManager = new GridLayoutManager(this, 5);
+        recyclerView.setLayoutManager(layoutManager);
+        adapter = new ZipaiJinziCardAdapter(player1JinziCardInfoList);
+        recyclerView.setAdapter(adapter);
 
+        recyclerView = (RecyclerView) findViewById(R.id.zipai_player4_jinzi_recyclerview);
+        layoutManager = new GridLayoutManager(this, 5);
         recyclerView.setLayoutManager(layoutManager);
         adapter = new ZipaiJinziCardAdapter(player1JinziCardInfoList);
         recyclerView.setAdapter(adapter);
@@ -49,9 +54,13 @@ public class ZipaiP4MainActivity extends AppCompatActivity {
         player1GiveupCardInfoList.add(new ZipaiGiveupCardInfo('柒', this));
         player1GiveupCardInfoList.add(new ZipaiGiveupCardInfo('玖', this));
 
-        recyclerView = (RecyclerView) findViewById(R.id.player1_giveup_recyclerview);
+        recyclerView = (RecyclerView) findViewById(R.id.zipai_player1_giveup_recyclerview);
         layoutManager = new GridLayoutManager(this, 5);
+        recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setAdapter(new ZipaiGiveupCardAdapter(player1GiveupCardInfoList));
 
+        recyclerView = (RecyclerView) findViewById(R.id.zipai_player4_giveup_recyclerview);
+        layoutManager = new GridLayoutManager(this, 5);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(new ZipaiGiveupCardAdapter(player1GiveupCardInfoList));
 

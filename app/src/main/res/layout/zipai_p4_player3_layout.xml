@@ -1,6 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:gravity="bottom">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/zipai_player3_giveup_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="3dp"
+                android:layout_weight="5"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                android:layoutDirection="rtl" >
+            </android.support.v7.widget.RecyclerView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/zipai_player3_jinzi_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="3dp"
+                android:layout_weight="8"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                android:layoutDirection="rtl" >
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:layout_margin="3dp"
+            app:cardCornerRadius="6dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/zipai_player3_header_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="#fff"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/head0"/>
+                <TextView
+                    android:id="@+id/zipai_player3_name_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="jalfer"
+                    android:textSize="10sp"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/zipai_player3_jifen_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1000"
+                    android:textSize="10sp"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/zipai_player3_huzi_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="16 胡"
+                    android:textSize="10sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4" >
+
+        <ImageView
+            android:id="@+id/zipai_player3_newcard_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/_04"
+            android:layout_margin="2dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/_31"/>
+    </LinearLayout>
 
 </LinearLayout>

@@ -39,29 +39,68 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_weight="3"
             android:layout_gravity="center_vertical"
             android:background="#888">
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="2"
+            android:layout_weight="4"
             android:layout_gravity="center_vertical"
             android:background="#bbb">
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="2"
+            android:layout_weight="3"
             android:layout_gravity="center_vertical"
+            android:gravity="center"
             android:background="#888">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/zipai_p4_hu_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginRight="10dp"
+                android:text="胡"/>
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/zipai_p4_peng_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginRight="10dp"
+                android:text="碰"/>
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/zipai_p4_chi_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginRight="10dp"
+                android:text="吃"/>
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/zipai_p4_guo_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginRight="10dp"
+                android:text="过"/>
+
         </LinearLayout>
         <LinearLayout
             android:id="@+id/zipai_p4_opear_layout"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="5"
+            android:layout_weight="10"
             android:layout_gravity="center_vertical"
             android:background="#fff"
             android:orientation="horizontal">
@@ -89,8 +128,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:layout_gravity="center_vertical"
-            android:background="#f0f">
+            android:layout_gravity="center_vertical">
 
             <include layout="@layout/zipai_p4_player2_layout" />
         </LinearLayout>
