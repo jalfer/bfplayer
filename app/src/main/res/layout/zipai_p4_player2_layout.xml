@@ -14,10 +14,10 @@
             android:id="@+id/zipai_player2_newcard_img"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:background="@drawable/_04"
+            android:background="@drawable/zipai_455"
             android:layout_margin="2dp"
             android:scaleType="fitCenter"
-            android:src="@drawable/_31"/>
+            android:src="@drawable/zipai_431"/>
 
     </LinearLayout>
 
